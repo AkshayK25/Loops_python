@@ -1,0 +1,83 @@
+#Stack and Queue using list (stack follows(LIFO) last in first out)
+
+stack = ["Akshay", "kumar", "21yrs"]
+stack.append("LPU")
+stack.append("Punjab")
+print(stack)
+print(stack.pop())
+print(stack)
+print(stack.pop())
+print(stack)
+
+q = [] #empty queue
+ 
+for i in range( 0, 5 ):
+    q.append( i ) # Add to back of queue
+ 
+while q: # Queue not empty
+    j = q.pop( 0 ) # Get from front of queue
+    print( j )
+ 
+# Output: 0 1 2 3 4
+
+#Counting Even and odd numbers in the list
+
+numbers = (1, 2, 3, 4, 5, 6, 7, 8, 9) # Declaring the tuple
+count_odd = 0
+count_even = 0
+for x in numbers:
+        if not x % 2:
+    	     count_even+=1
+        else:
+    	     count_odd+=1
+print("Number of even numbers :",count_even)
+print("Number of odd numbers :",count_odd)
+
+
+#creating list of numbers and appending strings
+
+My_list = [] #created an empty list
+
+ first_num = int(input("Enter the first number of the list : "))
+Enter the first number of the list : 5
+ second_num = int(input("Enter the second number of the list : "))
+Enter the second number of the list : 4
+ Third_num = int(input("Enter the third number of the list : "))
+Enter the third number of the list : 3
+
+ My_list.append(first_num)
+ My_list.append(second_num)
+ My_list.append(Third_num)
+ My_list
+[5, 4, 3]
+
+ My_list.append("google")
+My_list.append('tesla')
+ My_list.append('facebook')
+ My_list.append('facebook')
+ My_list.append('microsoft')
+ My_list.append('apple')
+ My_list
+[5, 4, 3, 'google', 'tesla', 'facebook', 'facebook', 'microsoft', 'apple']
+
+My_list.count("facebook")
+
+# creating 2 one dim arrays having sorted numbers and to merge them to create a new array sorted in ascending order
+
+a = [6,4,1]
+a.sort()
+ a
+[1, 4, 6]
+ b =[5,1,0]
+ b.sort()
+ b
+[0, 1, 5]
+
+ c=a+b
+ c
+[1, 4, 6, 0, 1, 5]
+ c.sort()
+ c
+[0, 1, 1, 4, 5, 6]
+
+#
