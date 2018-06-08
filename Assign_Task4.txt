@@ -1,0 +1,78 @@
+Python 3.6.5 (v3.6.5:f59c0932b4, Mar 28 2018, 16:07:46) [MSC v.1900 32 bit (Intel)] on win32
+Type "copyright", "credits" or "license()" for more information.
+
+
+>>> lis = [{ "name" : "Vanshika", "age" : 20}, 
+{ "name" : "Akshay", "age" : 20 },
+{ "name" : "sweetie" , "age" : 19 }]
+>>> print ("The list printed sorting by age: ")
+The list printed sorting by age: 
+>>> print (sorted(lis, key = lambda i: i['age']))
+[{'name': 'sweetie', 'age': 19}, {'name': 'Vanshika', 'age': 20}, {'name': 'Akshay', 'age': 20}]
+>>> print("\r")
+
+>>> print ("The list printed sorting by age and name: ")
+The list printed sorting by age and name: 
+>>> print (sorted(lis, key = lambda i: (i['age'], i['name'])))
+[{'name': 'sweetie', 'age': 19}, {'name': 'Akshay', 'age': 20}, {'name': 'Vanshika', 'age': 20}]
+>>> print("\r")
+
+>>> print ("The list printed sorting by age in descending order: ")
+The list printed sorting by age in descending order: 
+>>> print (sorted(lis, key = lambda i: i['age'],reverse=True))
+[{'name': 'Vanshika', 'age': 20}, {'name': 'Akshay', 'age': 20}, {'name': 'sweetie', 'age': 19}]
+
+
+
+>>> my_list = ['akshay',25,'acadview',2018]
+>>> my_tuple= tuple(my_list)
+>>> print(my_tuple)
+('akshay', 25, 'acadview', 2018)
+>>> len(my_tuple)
+4
+
+
+
+>>> New_tuple = (25,2,65,87,15)
+>>> max(New_tuple)
+87
+>>> min(New_tuple)
+2
+
+
+>>> countries_set = set()
+>>> print(countries_set)
+set()
+>>> countries_set.add("Australia")
+>>> countries_set
+{'Australia'}
+>>> countries_set.update(["India","srilanka","England"])
+>>> print("\r")
+
+
+>>> countries_set
+{ 'Australia','srilanka', 'England', 'India'}
+
+
+def word_count(str):
+    counts = dict()
+    words = str.split()
+
+    for word in words:
+        if word in counts:
+            counts[word] += 1
+        else:
+            counts[word] = 1
+
+    return counts
+
+>>> print( word_count('the quick brown fox jumps over the lazy dog.'))
+
+{'the': 2, 'jumps': 1, 'brown': 1, 'lazy': 1, 'fox': 1, 'over': 1, 'quick': 1, 'dog.': 1} 
+
+
+
+
+
+
+
